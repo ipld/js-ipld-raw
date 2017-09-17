@@ -1,0 +1,42 @@
+{
+  "name": "js-ipld-raw",
+  "version": "1.0.0",
+  "description": "JavaScript implementation of the IPLD raw format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "aegir test",
+    "test:browser": "aegir test --env browser",
+    "test:node": "aegir test --env node",
+    "lint": "aegir lint",
+    "release": "aegir release",
+    "release-minor": "aegir release --type minor",
+    "release-major": "aegir release --type major",
+    "build": "aegir build",
+    "coverage": "aegir coverage",
+    "coverage-publish": "aegir coverage publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipld/js-ipld-raw.git"
+  },
+  "author": "kumavis",
+  "contributors": [
+    "David Dias <daviddias.p@gmail.com>",
+    "kumavis <aaron@kumavis.me>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ipld/js-ipld-raw/issues"
+  },
+  "homepage": "https://github.com/ipld/js-ipld-raw#readme",
+  "dependencies": {
+    "cids": "^0.5.1"
+  },
+  "devDependencies": {
+    "aegir": "^12.0.8",
+    "chai": "^4.1.2",
+    "dirty-chai": "^2.0.1",
+    "ipfs-block": "^0.6.0",
+    "multihashing-async": "^0.4.6"
+  }
+}
