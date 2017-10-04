@@ -1,5 +1,5 @@
 {
-  "name": "js-ipld-raw",
+  "name": "ipld-raw",
   "version": "1.0.0",
   "description": "JavaScript implementation of the IPLD raw format.",
   "main": "index.js",
