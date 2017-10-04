@@ -1,6 +1,6 @@
 {
   "name": "ipld-raw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript implementation of the IPLD raw format.",
   "main": "src/index.js",
   "scripts": {
