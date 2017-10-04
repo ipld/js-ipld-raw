@@ -23,7 +23,7 @@ module.exports = {
       cb(null, data)
     },
     cid: (data, cb) => {
-      cb(null, new CID(1, 'base2', data))
+      cb(null, new CID(1, 'bin', data))
     }
   }
 }
