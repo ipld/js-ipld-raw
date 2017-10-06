@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "aegir test",
-    "test:browser": "aegir test --env browser",
-    "test:node": "aegir test --env node",
+    "test:browser": "aegir test --target browser",
+    "test:node": "aegir test --target node",
     "lint": "aegir lint",
     "release": "aegir release",
     "release-minor": "aegir release --type minor",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/ipld/js-ipld-raw#readme",
   "dependencies": {
-    "cids": "^0.5.1"
+    "cids": "^0.5.2"
   },
   "devDependencies": {
     "aegir": "^12.0.8",
