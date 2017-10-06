@@ -26,8 +26,8 @@ describe('raw codec', () => {
     })
   })
 
-  it('multicodec is bin', () => {
-    expect(resolver.multicodec).to.equal('bin')
+  it('multicodec is raw', () => {
+    expect(resolver.multicodec).to.equal('raw')
   })
 
   it('resolver.resolve', () => {
