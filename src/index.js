@@ -4,7 +4,7 @@ const CID = require('cids')
 // binary resolver
 module.exports = {
   resolver: {
-    multicodec: 'bin',
+    multicodec: 'raw',
     resolve: (ipfsBlock, path, callback) => {
       callback(null, {
         value: ipfsBlock.data,
@@ -23,7 +23,7 @@ module.exports = {
       cb(null, data)
     },
     cid: (data, cb) => {
-      cb(null, new CID(1, 'bin', data))
+      cb(null, new CID(1, 'raw', data))
     }
   }
 }
