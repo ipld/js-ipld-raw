@@ -5,13 +5,13 @@ const CID = require('cids')
 module.exports = {
   resolver: {
     multicodec: 'raw',
-    resolve: (ipfsBlock, path, callback) => {
+    resolve: (binaryBlob, path, callback) => {
       callback(null, {
-        value: ipfsBlock.data,
+        value: binaryBlob,
         remainderPath: ''
       })
     },
-    tree: (ipfsBlock, options, callback) => {
+    tree: (binaryBlob, options, callback) => {
       callback(null, [])
     }
   },

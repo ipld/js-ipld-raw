@@ -41,8 +41,6 @@
   "devDependencies": {
     "aegir": "^12.4.0",
     "chai": "^4.1.2",
-    "dirty-chai": "^2.0.1",
-    "ipfs-block": "~0.6.1",
-    "multihashing-async": "~0.4.7"
+    "dirty-chai": "^2.0.1"
   }
 }
