@@ -1,3 +1,27 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/ipld/js-ipld-raw/compare/v1.0.7...v2.0.0) (2018-02-12)
+
+
+### Bug Fixes
+
+* use binary blobs directly ([6fc00cd](https://github.com/ipld/js-ipld-raw/commit/6fc00cd))
+
+
+### BREAKING CHANGES
+
+* Everyone calling the functions of `resolve` need to
+pass in the binary data instead of an IPFS block.
+
+So if your input is an IPFS block, the code changes from
+
+    resolver.resolve(block, path, (err, result) => {…}
+
+to
+
+    resolver.resolve(block.data, path, (err, result) => {…}
+
+
+
 <a name="1.0.7"></a>
 ## [1.0.7](https://github.com/ipld/js-ipld-raw/compare/v1.0.5...v1.0.7) (2017-11-07)
 
