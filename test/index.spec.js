@@ -39,4 +39,12 @@ describe('raw codec', () => {
       expect(paths.length).to.eql(0)
     })
   })
+
+  it('resolver.tree option parameter can be ignored', () => {
+    resolver.tree(testBlob, (err, paths) => {
+      expect(err).to.not.exist()
+      expect(Array.isArray(paths)).to.eql(true)
+      expect(paths.length).to.eql(0)
+    })
+  })
 })

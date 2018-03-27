@@ -12,6 +12,9 @@ module.exports = {
       })
     },
     tree: (binaryBlob, options, callback) => {
+      if (typeof options === 'function') {
+        callback = options
+      }
       callback(null, [])
     }
   },
