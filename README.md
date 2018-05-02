@@ -14,12 +14,15 @@
 
 > JavaScript Implementation of the IPLD Format Raw Node.
 
+## Lead Maintainer
+
+[Volker Mische](https://github.com/vmx)
+
 ## Table of Contents
 
 - [Install](#install)
 - [Usage](#usage)
 - [API](#api)
-- [Maintainers](#maintainers)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -57,10 +60,6 @@ TODO
 ### `raw.util.serialize`
 
 ### `raw.util.deserialize`
-
-## Maintainers
-
-[@kumavis](https://github.com/kumavis)
 
 ## Contribute
 
