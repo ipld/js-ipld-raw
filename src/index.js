@@ -5,6 +5,7 @@ const CID = require('cids')
 module.exports = {
   resolver: {
     multicodec: 'raw',
+    defaultHashAlg: 'sha2-256',
     resolve: (binaryBlob, path, callback) => {
       callback(null, {
         value: binaryBlob,

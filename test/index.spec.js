@@ -24,6 +24,10 @@ describe('raw codec', () => {
     expect(resolver.multicodec).to.equal('raw')
   })
 
+  it('defaultHashAlg is sha2-256', () => {
+    expect(resolver.defaultHashAlg).to.equal('sha2-256')
+  })
+
   it('resolver.resolve', () => {
     resolver.resolve(testBlob, 'a/b/c/d', (err, result) => {
       expect(err).to.not.exist()
