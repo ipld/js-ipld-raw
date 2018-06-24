@@ -28,13 +28,13 @@ module.exports = {
       cb(null, data)
     },
     cid: (data, options, cb) => {
-      if (options instanceof Function) {
+      if (typeof options === 'function') {
         cb = options
         options = {}
       }
       options = options || {}
       const hashAlg = options.hashAlg || 'sha2-256'
-      const version = options.version || 1
+      const version = typeof options.version === 'undefined' ? 1 : options.version
       multihash(data, hashAlg, (err, mh) => {
         if (err) return cb(err)
         cb(null, new CID(version, 'raw', mh))
