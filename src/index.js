@@ -1,5 +1,6 @@
 'use strict'
 const CID = require('cids')
+const multihash = require('multihashing-async')
 
 // binary resolver
 module.exports = {
@@ -26,8 +27,18 @@ module.exports = {
     serialize: (data, cb) => {
       cb(null, data)
     },
-    cid: (data, cb) => {
-      cb(null, new CID(1, 'raw', data))
+    cid: (data, options, cb) => {
+      if (typeof options === 'function') {
+        cb = options
+        options = {}
+      }
+      options = options || {}
+      const hashAlg = options.hashAlg || 'sha2-256'
+      const version = typeof options.version === 'undefined' ? 1 : options.version
+      multihash(data, hashAlg, (err, mh) => {
+        if (err) return cb(err)
+        cb(null, new CID(version, 'raw', mh))
+      })
     }
   }
 }
