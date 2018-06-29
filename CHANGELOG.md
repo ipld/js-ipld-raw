@@ -1,3 +1,19 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/ipld/js-ipld-raw/compare/v2.0.0...v2.0.1) (2018-06-29)
+
+
+### Bug Fixes
+
+* resolver.tree allow options to be ommitted ([2903bf7](https://github.com/ipld/js-ipld-raw/commit/2903bf7)), closes [#4](https://github.com/ipld/js-ipld-raw/issues/4)
+
+
+### Features
+
+* add defaultHashAlg ([b7db79b](https://github.com/ipld/js-ipld-raw/commit/b7db79b))
+* add util.cid options ([#13](https://github.com/ipld/js-ipld-raw/issues/13)) ([bb2fbf7](https://github.com/ipld/js-ipld-raw/commit/bb2fbf7)), closes [ipld/interface-ipld-format#40](https://github.com/ipld/interface-ipld-format/issues/40)
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/ipld/js-ipld-raw/compare/v1.0.7...v2.0.0) (2018-02-12)
 
