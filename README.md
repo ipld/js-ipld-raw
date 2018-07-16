@@ -8,7 +8,7 @@
 [![Circle CI](https://circleci.com/gh/ipld/js-ipld-raw.svg?style=svg)](https://circleci.com/gh/ipld/js-ipld-raw)
 [![Dependency Status](https://david-dm.org/ipld/js-ipld-raw.svg?style=flat-square)](https://david-dm.org/ipld/js-ipld-raw)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
-[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) [![Greenkeeper badge](https://badges.greenkeeper.io/ipld/js-ipld-raw.svg)](https://greenkeeper.io/)
 ![](https://img.shields.io/badge/npm-%3E%3D3.0.0-orange.svg?style=flat-square)
 ![](https://img.shields.io/badge/Node.js-%3E%3D4.0.0-orange.svg?style=flat-square)
 
