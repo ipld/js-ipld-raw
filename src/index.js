@@ -7,37 +7,25 @@ module.exports = {
   resolver: {
     multicodec: 'raw',
     defaultHashAlg: 'sha2-256',
-    resolve: (binaryBlob, path, callback) => {
-      callback(null, {
+    resolve: async (binaryBlob, path) => {
+      return {
         value: binaryBlob,
         remainderPath: ''
-      })
-    },
-    tree: (binaryBlob, options, callback) => {
-      if (typeof options === 'function') {
-        callback = options
       }
-      callback(null, [])
-    }
+    },
+    tree: async (binaryBlob, options) => []
   },
   util: {
-    deserialize: (data, cb) => {
-      cb(null, data)
-    },
-    serialize: (data, cb) => {
-      cb(null, data)
-    },
-    cid: (data, options, cb) => {
-      if (typeof options === 'function') {
-        cb = options
-        options = {}
-      }
-      options = options || {}
+    deserialize: async (data) => data,
+    serialize: async (data) => data,
+    cid: async (data, options = {}) => {
       const hashAlg = options.hashAlg || 'sha2-256'
       const version = typeof options.version === 'undefined' ? 1 : options.version
-      multihash(data, hashAlg, (err, mh) => {
-        if (err) return cb(err)
-        cb(null, new CID(version, 'raw', mh))
+      return new Promise((resolve, reject) => {
+        multihash(data, hashAlg, (err, mh) => {
+          if (err) return reject(err)
+          resolve(new CID(version, 'raw', mh))
+        })
       })
     }
   }
