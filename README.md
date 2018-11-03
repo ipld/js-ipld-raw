@@ -29,7 +29,7 @@
 ## Install
 
 ```bash
-> npm install ipld-dag-pb --save
+> npm install ipld-raw --save
 ```
 
 ## Usage
