@@ -40,7 +40,7 @@
   "homepage": "https://github.com/ipld/js-ipld-raw#readme",
   "dependencies": {
     "cids": "~0.6.0",
-    "multihashing-async": "~0.5.1"
+    "multihashing-async": "~0.6.0"
   },
   "devDependencies": {
     "aegir": "^18.2.0",
