@@ -1,6 +1,6 @@
 {
   "name": "ipld-raw",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "JavaScript implementation of the IPLD raw format.",
   "leadMaintainer": "Volker Mische <volker.mische@gmail.com>",
   "main": "src/index.js",
@@ -25,11 +25,13 @@
     "url": "git+https://github.com/ipld/js-ipld-raw.git"
   },
   "contributors": [
+    "Alan Shaw <alan.shaw@protocol.ai>",
     "David Dias <daviddias.p@gmail.com>",
     "Garren Smith <garren.smith@gmail.com>",
     "Richard Schneider <makaretu@gmail.com>",
     "Victor Bjelkholm <victorbjelkholm@gmail.com>",
     "Volker Mische <volker.mische@gmail.com>",
+    "greenkeeper[bot] <greenkeeper[bot]@users.noreply.github.com>",
     "kumavis <aaron@kumavis.me>",
     "kumavis <kumavis@users.noreply.github.com>"
   ],
