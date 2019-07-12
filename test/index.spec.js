@@ -11,8 +11,8 @@ const multihash = require('multihashes')
 const multicodec = require('multicodec')
 
 describe('raw codec', () => {
-  let testData = Buffer.from('test data')
-  let testBlob = ipldRaw.util.serialize(testData)
+  const testData = Buffer.from('test data')
+  const testBlob = ipldRaw.util.serialize(testData)
 
   it('multicodec is raw', () => {
     expect(ipldRaw.codec).to.equal(multicodec.RAW)
