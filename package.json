@@ -41,7 +41,7 @@
   "dependencies": {
     "cids": "~0.7.0",
     "multicodec": "~0.5.0",
-    "multihashing-async": "~0.7.0"
+    "multihashing-async": "~0.8.0"
   },
   "devDependencies": {
     "aegir": "^20.0.0",
