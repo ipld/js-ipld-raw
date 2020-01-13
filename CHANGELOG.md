@@ -1,3 +1,14 @@
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/ipld/js-ipld-raw/compare/v4.0.0...v4.0.1) (2020-01-13)
+
+
+### Bug Fixes
+
+* **package:** update multicodec to version 1.0.0 ([fdbeed6](https://github.com/ipld/js-ipld-raw/commit/fdbeed6))
+* **package:** update multihashing-async to version 0.8.0 ([60c06c1](https://github.com/ipld/js-ipld-raw/commit/60c06c1))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/ipld/js-ipld-raw/compare/v3.0.0...v4.0.0) (2019-05-10)
 
