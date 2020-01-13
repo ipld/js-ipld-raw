@@ -1,6 +1,6 @@
 {
   "name": "ipld-raw",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "JavaScript implementation of the IPLD raw format.",
   "leadMaintainer": "Volker Mische <volker.mische@gmail.com>",
   "main": "src/index.js",
@@ -29,6 +29,7 @@
     "Richard Schneider <makaretu@gmail.com>",
     "Victor Bjelkholm <victorbjelkholm@gmail.com>",
     "Volker Mische <volker.mische@gmail.com>",
+    "greenkeeper[bot] <23040076+greenkeeper[bot]@users.noreply.github.com>",
     "greenkeeper[bot] <greenkeeper[bot]@users.noreply.github.com>",
     "kumavis <aaron@kumavis.me>",
     "kumavis <kumavis@users.noreply.github.com>"
