@@ -42,13 +42,13 @@
   "homepage": "https://github.com/ipld/js-ipld-raw#readme",
   "dependencies": {
     "cids": "~0.8.0",
-    "multicodec": "^1.0.0",
-    "multihashing-async": "~0.8.0"
+    "multicodec": "^1.0.1",
+    "multihashing-async": "~0.8.1"
   },
   "devDependencies": {
-    "aegir": "^21.0.1",
-    "chai": "^4.1.2",
+    "aegir": "^21.10.2",
+    "chai": "^4.2.0",
     "dirty-chai": "^2.0.1",
-    "multihashes": "~0.4.12"
+    "multihashes": "~0.4.19"
   }
 }
