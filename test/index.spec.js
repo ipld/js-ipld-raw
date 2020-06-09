@@ -1,13 +1,10 @@
 'use strict'
 /* eslint-env mocha */
-const chai = require('chai')
-const dirtyChai = require('dirty-chai')
-const expect = chai.expect
-chai.use(dirtyChai)
+const { expect } = require('aegir/utils/chai')
 
 const ipldRaw = require('../src/index')
 const resolver = ipldRaw.resolver
-const multihash = require('multihashes')
+const multihash = require('multihashing-async').multihash
 const multicodec = require('multicodec')
 
 describe('raw codec', () => {
