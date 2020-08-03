@@ -6,9 +6,10 @@ const ipldRaw = require('../src/index')
 const resolver = ipldRaw.resolver
 const multihash = require('multihashing-async').multihash
 const multicodec = require('multicodec')
+const uint8ArrayFromString = require('uint8arrays/from-string')
 
 describe('raw codec', () => {
-  const testData = Buffer.from('test data')
+  const testData = uint8ArrayFromString('test data')
   const testBlob = ipldRaw.util.serialize(testData)
 
   it('multicodec is raw', () => {
@@ -39,7 +40,7 @@ describe('raw codec', () => {
 })
 
 describe('raw util', () => {
-  const rawData = Buffer.from('some raw data')
+  const rawData = uint8ArrayFromString('some raw data')
 
   it('serialize is noop', () => {
     const result = ipldRaw.util.serialize(rawData)
