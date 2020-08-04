@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/ipld/js-ipld-raw#readme",
   "dependencies": {
-    "cids": "ipld/js-cid#fix/support-uint8arrays",
+    "cids": "^1.0.0",
     "multicodec": "^2.0.0",
     "multihashing-async": "^2.0.0"
   },
