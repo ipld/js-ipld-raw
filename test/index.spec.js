@@ -7,6 +7,7 @@ const resolver = ipldRaw.resolver
 const multihash = require('multihashing-async').multihash
 const multicodec = require('multicodec')
 const uint8ArrayFromString = require('uint8arrays/from-string')
+const uint8ArrayToString = require('uint8arrays/to-string')
 
 describe('raw codec', () => {
   const testData = uint8ArrayFromString('test data')
@@ -22,7 +23,7 @@ describe('raw codec', () => {
 
   it('resolver.resolve', () => {
     const result = resolver.resolve(testBlob, '/')
-    expect(result.value.toString('hex')).to.equal(testData.toString('hex'))
+    expect(uint8ArrayToString(result.value, 'base16')).to.equal(uint8ArrayToString(testData, 'base16'))
     expect(result.remainderPath).to.equal('')
   })
 
@@ -32,8 +33,8 @@ describe('raw codec', () => {
     )
   })
 
-  it('resolver.tree', () => {
-    const paths = resolver.tree(testBlob)
+  it('resolver.tree', async () => {
+    const paths = await resolver.tree(testBlob).next()
     expect(paths.value).to.be.undefined()
     expect(paths.done).to.be.true()
   })
@@ -62,7 +63,7 @@ describe('raw util', () => {
   })
 
   it('create cid with hashAlg', async () => {
-    const cid = await ipldRaw.util.cid(rawData, { hashAlg: 'sha2-512' })
+    const cid = await ipldRaw.util.cid(rawData, { hashAlg: multihash.names['sha2-512'] })
     expect(cid.version).to.equal(1)
     expect(cid.codec).to.equal('raw')
     expect(cid.multihash).to.exist()
