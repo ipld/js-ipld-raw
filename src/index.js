@@ -7,9 +7,14 @@ const multicodec = require('multicodec')
 /**
  * @typedef {import('cids').CIDVersion} CIDVersion
  * @typedef {import('multihashing-async').multihash.HashCode} HashCode
+ * @typedef {import('interface-ipld-format').Format<Uint8Array>} RawFormat
  */
 
-// binary resolver
+/**
+ * Binary resolver
+ *
+ * @type {RawFormat}
+ */
 module.exports = {
   codec: multicodec.RAW,
   defaultHashAlg: multihash.names['sha2-256'],
