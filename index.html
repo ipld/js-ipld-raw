@@ -1,363 +1,183 @@
 <!doctype html>
-<html lang="en">
+<html class="default no-js">
 <head>
-  <meta charset='utf-8'>
-  <title>ipld-raw 6.0.0 | Documentation</title>
-  <meta name='description' content='JavaScript implementation of the IPLD raw format.'>
-  <meta name='viewport' content='width=device-width,initial-scale=1'>
-  <link href='assets/bass.css' rel='stylesheet'>
-  <link href='assets/style.css' rel='stylesheet'>
-  <link href='assets/github.css' rel='stylesheet'>
-  <link href='assets/split.css' rel='stylesheet'>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ipld-raw - v7.0.0</title>
+	<meta name="description" content="Documentation for ipld-raw - v7.0.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
-<body class='documentation m0'>
-    <div class='flex'>
-      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
-        <div class='py1 px2'>
-          <h3 class='mb0 no-anchor'>ipld-raw</h3>
-          <div class='mb1'><code>6.0.0</code></div>
-          <input
-            placeholder='Filter'
-            id='filter-input'
-            class='col12 block input'
-            spellcheck='false'
-            autocapitalize='off'
-            autocorrect='off'
-            type='text' />
-          <div id='toc'>
-            <ul class='list-reset h5 py1-ul'>
-              
-                
-                <li><a
-                  href='#resolve'
-                  class="">
-                  resolve
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#tree'
-                  class="">
-                  tree
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#cid'
-                  class="">
-                  cid
-                  
-                </a>
-                
-                </li>
-              
-            </ul>
-          </div>
-          <div class='mt1 h6 quiet'>
-            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
-          </div>
-        </div>
-      </div>
-      <div id='split-right' class='relative overflow-auto height-viewport-100'>
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='resolve'>
-      resolve
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ipld/js-ipld-raw/blob/70e64960d0397f1181d7f9d38a5337630d26d593/src/index.js#L22-L31'>
-      <span>src/index.js</span>
-      </a>
-    
-  </div>
-  
-
-  <p>Resolves a path within a Raw block.</p>
-<p>Always returns the raw data as value without any remainderPath.</p>
-
-    <div class='pre p1 fill-light mt0'>resolve(binaryBlob: <a href="https://nodejs.org/api/buffer.html">Buffer</a>, path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>binaryBlob</span> <code class='quiet'>(<a href="https://nodejs.org/api/buffer.html">Buffer</a>)</code>
-	    Binary representation of a PB block
-
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>path</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
-            = <code>&#39;/&#39;</code>)</code>
-	    Path that should be resolved.  Must be '/' or an exception is thrown
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
-        result - Result of the path it it was resolved successfully
-
-      
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>any</code>:
-        result.value - The raw data
-
-      
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
-        result.remainderPath - An empty string
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='tree'>
-      tree
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ipld/js-ipld-raw/blob/70e64960d0397f1181d7f9d38a5337630d26d593/src/index.js#L39-L43'>
-      <span>src/index.js</span>
-      </a>
-    
-  </div>
-  
-
-  <p>Return all available paths of a block.</p>
-
-    <div class='pre p1 fill-light mt0'>tree(binaryBlob: <a href="https://nodejs.org/api/buffer.html">Buffer</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>binaryBlob</span> <code class='quiet'>(<a href="https://nodejs.org/api/buffer.html">Buffer</a>)</code>
-	    The raw data
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
-        Finished generator with 
-<code>done: true</code>
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='cid'>
-      cid
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/ipld/js-ipld-raw/blob/70e64960d0397f1181d7f9d38a5337630d26d593/src/index.js#L61-L70'>
-      <span>src/index.js</span>
-      </a>
-    
-  </div>
-  
-
-  <p>Calculate the CID of the binary blob.</p>
-
-    <div class='pre p1 fill-light mt0'>cid(binaryBlob: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, userOptions: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;CID></div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>binaryBlob</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    Encoded IPLD Node
-
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>userOptions</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>?)</code>
-	    Options to create the CID
-
-          </div>
-          
-          <table class='mt1 mb2 fixed-table h5 col-12'>
-            <colgroup>
-              <col width='30%' />
-              <col width='70%' />
-            </colgroup>
-            <thead>
-              <tr class='bold fill-light'>
-                <th>Name</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody class='mt1'>
-              
-                <tr>
-  <td class='break-word'><span class='code bold'>userOptions.cidVersion</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>
-  
-    (default <code>1</code>)
-  </td>
-  <td class='break-word'><span>CID version number
-</span></td>
-</tr>
-
-
-              
-            </tbody>
-          </table>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;CID></code>:
-        
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-      </div>
-    </div>
-  <script src='assets/anchor.js'></script>
-  <script src='assets/split.js'></script>
-  <script src='assets/site.js'></script>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">ipld-raw - v7.0.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>ipld-raw - v7.0.0</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#js-ipld-raw" id="js-ipld-raw" style="color: inherit; text-decoration: none;">
+					<h1>js-ipld-raw</h1>
+				</a>
+				<p><a href="http://ipn.io"><img src="https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square" alt=""></a>
+					<a href="http://github.com/ipld/ipld"><img src="https://img.shields.io/badge/project-IPLD-blue.svg?style=flat-square" alt=""></a>
+					<a href="http://webchat.freenode.net/?channels=%23ipfs"><img src="https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square" alt=""></a>
+					<a href="https://travis-ci.com/ipld/js-ipld-raw"><img src="https://flat.badgen.net/travis/ipld/js-ipld-raw" alt="Travis CI"></a>
+					<a href="https://coveralls.io/github/ipld/js-ipld-raw?branch=master"><img src="https://coveralls.io/repos/github/ipld/js-ipld-raw/badge.svg?branch=master" alt="Coverage Status"></a>
+					<a href="https://david-dm.org/ipld/js-ipld-raw"><img src="https://david-dm.org/ipld/js-ipld-raw.svg?style=flat-square" alt="Dependency Status"></a>
+					<a href="https://github.com/feross/standard"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square" alt="js-standard-style"></a>
+					<a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt="standard-readme compliant"></a> <a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/ipld/js-ipld-raw.svg" alt="Greenkeeper badge"></a>
+					<img src="https://img.shields.io/badge/npm-%3E%3D3.0.0-orange.svg?style=flat-square" alt="">
+				<img src="https://img.shields.io/badge/Node.js-%3E%3D4.0.0-orange.svg?style=flat-square" alt=""></p>
+				<blockquote>
+					<p>JavaScript Implementation of the IPLD Format Raw Node.</p>
+				</blockquote>
+				<a href="#lead-maintainer" id="lead-maintainer" style="color: inherit; text-decoration: none;">
+					<h2>Lead Maintainer</h2>
+				</a>
+				<p><a href="https://github.com/vmx">Volker Mische</a></p>
+				<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
+					<h2>Table of Contents</h2>
+				</a>
+				<ul>
+					<li><a href="#install">Install</a></li>
+					<li><a href="#usage">Usage</a></li>
+					<li><a href="#api">API</a></li>
+					<li><a href="#contribute">Contribute</a></li>
+					<li><a href="#license">License</a></li>
+				</ul>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<pre><code class="language-bash"><span style="color: #000000">&gt; npm install ipld-raw --save</span>
+</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<pre><code class="language-JavaScript"><span style="color: #0070C1">TODO</span>
+</code></pre>
+				<a href="#api" id="api" style="color: inherit; text-decoration: none;">
+					<h2>API</h2>
+				</a>
+				<a href="#ipld-format-specifics---local-nodeblock-scope-resolver" id="ipld-format-specifics---local-nodeblock-scope-resolver" style="color: inherit; text-decoration: none;">
+					<h3><a href="https://github.com/ipld/interface-ipld-format">IPLD Format Specifics</a> - Local (node/block scope) resolver</h3>
+				</a>
+				<blockquote>
+					<p>See: <a href="https://github.com/ipld/interface-ipld-format#local-resolver-methods">https://github.com/ipld/interface-ipld-format#local-resolver-methods</a></p>
+				</blockquote>
+				<a href="#rawresolverresolve" id="rawresolverresolve" style="color: inherit; text-decoration: none;">
+					<h4><code>raw.resolver.resolve</code></h4>
+				</a>
+				<a href="#rawresolvertree" id="rawresolvertree" style="color: inherit; text-decoration: none;">
+					<h4><code>raw.resolver.tree</code></h4>
+				</a>
+				<a href="#rawresolverpatch" id="rawresolverpatch" style="color: inherit; text-decoration: none;">
+					<h4><code>raw.resolver.patch</code></h4>
+				</a>
+				<a href="#ipld-format-specifics---util" id="ipld-format-specifics---util" style="color: inherit; text-decoration: none;">
+					<h3><a href="https://github.com/ipld/interface-ipld-format">IPLD Format Specifics</a> - util</h3>
+				</a>
+				<blockquote>
+					<p>See: <a href="https://github.com/ipld/interface-ipld-format#ipld-format-utils">https://github.com/ipld/interface-ipld-format#ipld-format-utils</a></p>
+				</blockquote>
+				<a href="#rawutilcid" id="rawutilcid" style="color: inherit; text-decoration: none;">
+					<h3><code>raw.util.cid</code></h3>
+				</a>
+				<a href="#rawutilserialize" id="rawutilserialize" style="color: inherit; text-decoration: none;">
+					<h3><code>raw.util.serialize</code></h3>
+				</a>
+				<a href="#rawutildeserialize" id="rawutildeserialize" style="color: inherit; text-decoration: none;">
+					<h3><code>raw.util.deserialize</code></h3>
+				</a>
+				<a href="#contribute" id="contribute" style="color: inherit; text-decoration: none;">
+					<h2>Contribute</h2>
+				</a>
+				<p>Please contribute! <a href="https://github.com/ipld/js-ipld-raw/issues">Look at the issues</a>!</p>
+				<p>Check out our <a href="https://github.com/ipld/ipld/blob/master/contributing.md">contributing document</a> for more information on how we work, and about contributing in general. Please be aware that all interactions related to IPLD are subject to the IPFS <a href="https://github.com/ipfs/community/blob/master/code-of-conduct.md">Code of Conduct</a>.</p>
+				<p>Small note: If editing the README, please conform to the <a href="https://github.com/RichardLitt/standard-readme">standard-readme</a> specification.</p>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p><a href="LICENSE">MIT</a> © 2017 Protocol Labs Inc.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#cidversion" class="tsd-kind-icon">CIDVersion</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#hashcode" class="tsd-kind-icon">Hash<wbr>Code</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#rawformat" class="tsd-kind-icon">Raw<wbr>Format</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
