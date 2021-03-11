@@ -1,3 +1,7 @@
+# [7.0.0](https://github.com/ipld/js-ipld-raw/compare/v6.0.0...v7.0.0) (2021-03-11)
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/ipld/js-ipld-raw/compare/v5.0.0...v6.0.0) (2020-08-04)
 
