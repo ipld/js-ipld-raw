@@ -46,7 +46,7 @@
   "homepage": "https://github.com/ipld/js-ipld-raw#readme",
   "dependencies": {
     "cids": "^1.1.6",
-    "interface-ipld-format": "0.0.2",
+    "interface-ipld-format": "^1.0.0",
     "multicodec": "^3.0.1",
     "multihashing-async": "^2.1.2"
   },
