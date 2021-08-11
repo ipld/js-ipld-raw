@@ -1,6 +1,6 @@
 {
   "name": "ipld-raw",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "JavaScript implementation of the IPLD raw format.",
   "leadMaintainer": "Volker Mische <volker.mische@gmail.com>",
   "main": "src/index.js",
@@ -34,10 +34,10 @@
     "kumavis <aaron@kumavis.me>",
     "Alex Potsides <alex@achingbrain.net>",
     "Richard Schneider <makaretu@gmail.com>",
-    "Victor Bjelkholm <victorbjelkholm@gmail.com>",
-    "Alan Shaw <alan.shaw@protocol.ai>",
+    "ᴠɪᴄᴛᴏʀ ʙᴊᴇʟᴋʜᴏʟᴍ <victorbjelkholm@gmail.com>",
     "Chris Hafey <chafey@gmail.com>",
-    "Garren Smith <garren.smith@gmail.com>"
+    "Garren Smith <garren.smith@gmail.com>",
+    "Alan Shaw <alan.shaw@protocol.ai>"
   ],
   "license": "MIT",
   "bugs": {
